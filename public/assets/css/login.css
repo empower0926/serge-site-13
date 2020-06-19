@@ -4,7 +4,12 @@
 }
 
 .navbar-brand img{
-    width: 128px !important;
+    width: 6rem !important;
+}
+
+.navbar-toggler{
+    padding-right: 0 !important;
+    margin-top: 0 !important;
 }
 
 .navbar-toggler-icon{
