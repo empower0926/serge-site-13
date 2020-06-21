@@ -10,18 +10,18 @@ class User extends Component {
         super(props);
         
 
-        if (this.state === undefined && this.state === null) {
-            this.state = { value: <Welcome welcome={this.WelcomeView} /> }
+        if (this.state === undefined && this.getData() === null) {
+            this.state = { value: <Welcome welcome={this.RegisterView} /> }
         } else if (this.getData() !== null) {
-
             if (this.getData() === "register") {
-                this.state = { value: <Welcome welcome={this.RegisterView} /> }
+                this.state = { value: <Register signin={this.LoginView} />  }
+                this.setData("register");
             } else if (this.getData() === "login") {
-                this.state = { value: <Welcome welcome={this.LoginView} /> }
+                this.state = { value: <Login signup={this.RegisterView} />  }
+                this.setData("login");
             }
-
         } else {
-            this.state = { value: <Welcome welcome={this.WelcomeView} /> }
+            this.state = { value: <Welcome welcome={this.RegisterView} /> }
         }
 
 
