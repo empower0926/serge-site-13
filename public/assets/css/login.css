@@ -31,15 +31,11 @@
     color: black;
 }
 
-body{
-    background: url(../images/exported/login_bg.svg) no-repeat;
-    background-size: cover;
-}
 
 .login-n-regigster{
     font-family: Heebo-regular;
+    width: 100vw;
     height: 100vh;
-    width: 100%;
     color: white;
 }
 

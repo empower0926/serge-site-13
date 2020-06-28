@@ -27,6 +27,11 @@ class Login extends Component {
 
         );
     }
+
+    componentDidMount(){
+        var root = document.getElementById('root');
+        root.className = "login-bg";
+    }
 }
 
 export default Login;

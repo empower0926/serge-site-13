@@ -32,6 +32,11 @@ class Register extends Component {
             </div>
         );
     }
+
+    componentDidMount(){
+        var root = document.getElementById('root');
+        root.className = "login-bg";
+    }
 }
 
 export default Register;

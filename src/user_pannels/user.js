@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Login from './login'
 import Register from './register'
-import Welcome from './welcome';
 
 
 class User extends Component {
@@ -11,7 +10,7 @@ class User extends Component {
         
 
         if (this.state === undefined && this.getData() === null) {
-            this.state = { value: <Welcome welcome={this.RegisterView} /> }
+            this.state = { value: <Register signin={this.LoginView} />  }
         } else if (this.getData() !== null) {
             if (this.getData() === "register") {
                 this.state = { value: <Register signin={this.LoginView} />  }
@@ -21,7 +20,7 @@ class User extends Component {
                 this.setData("login");
             }
         } else {
-            this.state = { value: <Welcome welcome={this.RegisterView} /> }
+            this.state = { value: <Register signin={this.LoginView} />  }
         }
 
 
@@ -34,10 +33,7 @@ class User extends Component {
         this.setState({ value: <Login signup={this.RegisterView} /> });
         this.setData("login");
     }
-    WelcomeView = () => {
-        this.setState({ value: <Welcome welcome={this.WelcomeView} /> });
-        this.setData("welcome");
-    }
+    
     setData(para) {
         let obj = { heading: para };
         sessionStorage.setItem('mydata', JSON.stringify(obj));

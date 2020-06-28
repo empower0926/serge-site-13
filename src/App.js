@@ -1,5 +1,5 @@
 import React from 'react';
-import User from './user_pannels/user';
+import Welcome from './user_pannels/welcome';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 function App() {
   return (
     <div >
-      <User/>
+      <Welcome/>
     </div>
   );
 }
