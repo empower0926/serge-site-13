@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import  {Link} from 'react-router-dom';
 class User extends Component {
 
 
@@ -8,32 +8,32 @@ class User extends Component {
         return (
             <div className="bg-image">
                 {/*  <!-- nav -->  */}
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-10 mx-auto">
-                            <nav class="navbar navbar-expand-lg navbar-light">
-                                <a class="navbar-brand" href="#">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-md-10 mx-auto">
+                            <nav className="navbar navbar-expand-lg navbar-light">
+                                <a className="navbar-brand" href="#">
                                     <img src="../assets/images/exported/logo.svg" alt="" />
                                 </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
+                                    <span className="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item dropdown mx-2">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                <div className="collapse navbar-collapse" id="navbarNav">
+                                    <ul className="navbar-nav ml-auto">
+                                        <li className="nav-item dropdown mx-2">
+                                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 EN
                                         </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">ARAB</a>
-                                                <a class="dropdown-item" href="#">SPANISH</a>
-                                                <a class="dropdown-item" href="#">ANOTHER LANGUAGE</a>
+                                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a className="dropdown-item" href="#">ARAB</a>
+                                                <a className="dropdown-item" href="#">SPANISH</a>
+                                                <a className="dropdown-item" href="#">ANOTHER LANGUAGE</a>
                                             </div>
                                         </li>
-                                        <li class="nav-item mx-2">
-                                            <a class="nav-link" href="#">SUPPORT</a>
+                                        <li className="nav-item mx-2">
+                                            <a className="nav-link" href="#">SUPPORT</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -43,8 +43,8 @@ class User extends Component {
                 </div>
 
 
-                <section class="login-n-regigster">
-                    <div class="container-fluid user-container">
+                <section className="login-n-regigster">
+                    <div className="container-fluid user-container">
                         <div className="row mt-5">
 
                             <div className="col-xl-1"></div>
@@ -56,7 +56,7 @@ class User extends Component {
                             <div className="col-xl-8 d-flex ads-container"></div>
 
                             <div className="col-xl-4 d-flex">
-                                <a className="mx-auto f-image" href="#"><img src="../assets/images/F.png" /> </a>
+                                <Link  to='/user' className="mx-auto f-image" ><img src="../assets/images/F.png" /> </Link>
                             </div>
 
                         </div>
@@ -78,21 +78,21 @@ class User extends Component {
                         </div>
 
                         <div className="row welcome-socials">
-                            <div class="col-xl-8 mt-5 mb-5 socials d-flex">
-                                <div class="social-buttons">
-                                    <a class="mr-3" href="#"><img
+                            <div className="col-xl-8 mt-5 mb-5 socials d-flex">
+                                <div className="social-buttons">
+                                    <a className="mr-3" href="#"><img
                                         src="../assets/images/exported/login_socials/medium-with-circle.svg"
                                         alt="flash wallet medium" /></a>
-                                    <a class="mr-3" href="#"><img
+                                    <a className="mr-3" href="#"><img
                                         src="../assets/images/exported/login_socials/facebook-with-circle.svg"
                                         alt="flash wallet facebook" /></a>
-                                    <a class="mr-3" href="#"><img
+                                    <a className="mr-3" href="#"><img
                                         src="../assets/images/exported/login_socials/twitter-with-circle.svg"
                                         alt="flash wallet twitter" /></a>
-                                    <a class="mr-3" href="#"><img
+                                    <a className="mr-3" href="#"><img
                                         src="../assets/images/exported/login_socials/instagram-with-circle.svg"
                                         alt="flash wallet instagram" /></a>
-                                    <a class="mr-3" href="#"><img
+                                    <a className="mr-3" href="#"><img
                                         src="../assets/images/exported/login_socials/linkedin-with-circle.svg"
                                         alt="flash wallet linkedIn" /></a>
                                     <a href="#"><img src="../assets/images/exported/login_socials/dribbble-with-circle.svg"
