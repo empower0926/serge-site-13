@@ -215,3 +215,35 @@ a:hover{
       background-size: cover;
   }
 }
+
+.f-image{
+    z-index: 999;
+}
+
+.animation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#overlay{
+    display: none;
+    width:160px;
+    height:160px;
+    position: absolute;
+    animation-name: spin;
+    top: 208px;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

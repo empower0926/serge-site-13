@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import  {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 class User extends Component {
 
 
@@ -55,8 +55,9 @@ class User extends Component {
 
                             <div className="col-xl-8 d-flex ads-container"></div>
 
-                            <div className="col-xl-4 d-flex">
-                                <Link  to='/user' className="mx-auto f-image" ><img src="../assets/images/F.png" /> </Link>
+                            <div className="col-xl-4 animation-container">
+                                <img src="/assets/images/animation.png" className="mx-auto" id="overlay" alt="timer" />
+                                <Link to='/user' className="mx-auto f-image" ><img src="../assets/images/F.png" /> </Link>
                             </div>
 
                         </div>

@@ -17,6 +17,9 @@
         -moz-animation: 20s infinite bgimagechange;
         -webkit-animation: bgimagechange 10s infinite;
     }
+    #overlay{
+        display: none;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -35,6 +38,9 @@
     }
     .contact-us{
         margin-top: 0 !important;
+    }
+    #overlay{
+        display: none;
     }
 }
 
@@ -78,6 +84,9 @@
     }
     .welcome-socials{
         display: none;
+    }
+    #overlay{
+        display: block;
     }
 }
 
@@ -124,5 +133,8 @@
     }
     .welcome-socials{
         display: none;
+    }
+    #overlay{
+        display: block;
     }
 }
